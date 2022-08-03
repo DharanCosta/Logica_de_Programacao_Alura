@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro teste</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // alert("Teste de alerta");
+
+    function pulaLinha(num){
+
+        for(i=0; i<num;i++){
+            document.write("<br>")
+        }
+    }
+
+    document.write("A idade do Flavio é 18<br>");
+    
+    document.write("Eu acertei: "+(15/50)*100 +"<br>");
+
+
+    var ano = 2016;
+
+    document.write("Flavio tem "+ (ano - 1977) +" anos <br>");
+    document.write("Joaquim tem "+ (ano - 1996) +" anos <br>");document.write("Barney tem "+ (ano - 1976) +" anos <br>");
+
+    var idadeFlavio = ano - 1977;
+    var idadeJoaquim = ano - 1996;
+    var idadeBarney = ano -1976;
+
+    var media = (idadeFlavio+idadeJoaquim+idadeBarney)/3;
+    pulaLinha();
+    document.write("A média das idades é "+Math.round(media))
+
+</script>
+</html>

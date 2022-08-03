@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        function pulaLinha(num){
+            for(i=0; i<num;i++){
+                document.write("<br>")
+            }
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha(1);
+        }
+
+        var vitorias = prompt("Qual foi o número de vitórias?");
+        var empates = parseInt(prompt("Qual foi quantidade de empates?"));
+
+        var pontos =(vitorias*3)+(empates*1);
+        mostra("O seu time fez "+pontos+" pontos")
+
+        var anoCopa =1930;
+
+        while(anoCopa<=2022){
+            mostra("Teve copa em "+anoCopa);
+            anoCopa = anoCopa+4;
+        }
+
+
+
+    </script>
+
+</html>
